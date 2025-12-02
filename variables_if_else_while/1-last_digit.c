@@ -9,7 +9,8 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	n = n % 10;
-
+	if (n < 0)
+	n = -n;
 	if (n > 5)
 	{
 		printf("%d and is greater than 5\n", n);
