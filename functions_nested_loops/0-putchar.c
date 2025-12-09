@@ -5,7 +5,7 @@
  *
  * Return: 0
  */
-int print_alphabet(void)
+int main(void)
 {
 write(1, "_putchar\n", 9);
 
