@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_square - prints a right-aligned triangle of size `size`
+ * print_triangle - prints a right-aligned triangle
  * @size: height of the triangle
  *
  * Return: void
  */
-void print_square(int size)
+void print_triangle(int size)
 {
 	int a, b, c;
 
@@ -18,11 +18,13 @@ void print_square(int size)
 
 	for (a = 0; a < size; a++)
 	{
+		/* print spaces */
 		for (b = 0; b < size - a - 1; b++)
 		{
 			_putchar(' ');
 		}
 
+		/* print hashes */
 		for (c = 0; c < a + 1; c++)
 		{
 			_putchar('#');
